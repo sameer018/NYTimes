@@ -6,4 +6,5 @@
     <color name="colorPrimaryVariant">#34515e</color>
     <color name="colorAccent">#8eacbb</color>
     <color name="trans_dark_grey">#40282828</color>
+    <color name="page_bg">#ECECEC</color>
 </resources>
