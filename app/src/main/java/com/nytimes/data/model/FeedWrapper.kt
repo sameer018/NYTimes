@@ -4,6 +4,9 @@ import android.os.Parcel
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 
+/**
+ * Created by sameer.khader on 21/01/2021.
+ */
 class FeedWrapper(
     @SerializedName("status") var status: String? = null,
     @SerializedName("copyright") var copyright: String? = null,

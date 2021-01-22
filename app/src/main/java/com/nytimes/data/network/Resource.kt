@@ -1,5 +1,8 @@
 package com.nytimes.data.network
 
+/**
+ * Created by sameer.khader on 21/01/2021.
+ */
 data class Resource<out T>(val status: Status, val data: T?, val message: String?) {
 
     companion object {

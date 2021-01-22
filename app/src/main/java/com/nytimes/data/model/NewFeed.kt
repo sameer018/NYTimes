@@ -4,6 +4,9 @@ import android.os.Parcel
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 
+/**
+ * Created by sameer.khader on 21/01/2021.
+ */
 class NewFeed(
     @SerializedName("uri") val uri: String? = null,
     @SerializedName("url") val url: String? = null,
@@ -26,6 +29,7 @@ class NewFeed(
     @SerializedName("per_facet") val per_facet: List<String>,
     @SerializedName("geo_facet") val geo_facet: List<String>,
     @SerializedName("media") val media: List<Media>,
+    @SerializedName("multimedia") val multimedia: List<MultiMedia>,
     @SerializedName("eta_id") val eta_id: Int
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
@@ -50,6 +54,7 @@ class NewFeed(
         parcel.createStringArrayList()!!,
         parcel.createStringArrayList()!!,
         parcel.createTypedArrayList(Media)!!,
+        parcel.createTypedArrayList(MultiMedia)!!,
         parcel.readInt()
     ) {
     }
@@ -76,6 +81,7 @@ class NewFeed(
         parcel.writeStringList(per_facet)
         parcel.writeStringList(geo_facet)
         parcel.writeTypedList(media)
+        parcel.writeTypedList(multimedia)
         parcel.writeInt(eta_id)
     }
 

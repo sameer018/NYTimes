@@ -4,7 +4,6 @@ package com.nytimes.injection.module
 import com.nytimes.BuildConfig
 import com.nytimes.data.api.ApiHelper
 import com.nytimes.data.api.ApiHelperImpl
-
 import com.nytimes.data.api.ApiService
 import dagger.Module
 import dagger.Provides
